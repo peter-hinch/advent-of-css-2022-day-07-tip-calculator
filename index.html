@@ -8,5 +8,42 @@
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <section id="calculator">
+        <div class="calculator__output"></div>
+        <div class="calculator__input">
+          <input type="number" id="input__bill-amount" />
+          <label for="input__bill-amount">Bill Amount</label>
+        </div>
+        <div class="calculator__tip-select">
+          <input
+            type="radio"
+            id="tip-select__five-percent"
+            name="tip-select__radios"
+          />
+          <label for="tip-select__five-percent">5%</label>
+          <input
+            type="radio"
+            id="tip-select__ten-percent"
+            name="tip-select__radios"
+          />
+          <label for="tip-select__ten-percent">10%</label>
+          <input
+            type="radio"
+            id="tip-select__fifteen-percent"
+            name="tip-select__radios"
+          />
+          <label for="tip-select__fifteen-percent">15%</label>
+          <input
+            type="radio"
+            id="tip-select__twenty-percent"
+            name="tip-select__radios"
+          />
+          <label for="tip-select__twenty-percent">20%</label>
+        </div>
+        <div class="calculator__actions"></div>
+      </section>
+    </main>
+  </body>
 </html>
