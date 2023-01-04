@@ -93,13 +93,14 @@ section#calculator .calculator__input .input__form-element {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 62px 41px 46px;
+  padding: 61px 41px 46px;
 }
 
 section#calculator .calculator__input .input__form-element input {
   width: calc(100% - 70px);
   font-family: 'Inter', sans-serif;
   font-size: 62px;
+  line-height: 75px;
   text-align: center;
   background: transparent;
   border: none;
@@ -120,6 +121,9 @@ section#calculator .calculator__tip-select {
   gap: 53px;
   padding: 20px 34px;
   background: #eeeeee;
+  border: 1px solid #dedede;
+  border-left: none;
+  border-right: none;
 }
 
 section#calculator .calculator__tip-select input[type='radio'] {
