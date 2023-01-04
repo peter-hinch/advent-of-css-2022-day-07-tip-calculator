@@ -11,10 +11,27 @@
   <body>
     <main>
       <section id="calculator">
-        <div class="calculator__output"></div>
+        <div class="calculator__output">
+          <div class="output__tip-amount">
+            <span class="output__label">Tip Amount</span>
+            <span class="output__currency-symbol">$</span>
+            <span class="output__value">4.02</span>
+          </div>
+          <div class="output__total-per-person">
+            <span class="output__label">Total Per Person</span>
+            <span class="output__currency-symbol">$</span>
+            <span class="output__value">12.02</span>
+          </div>
+        </div>
         <div class="calculator__input">
-          <input type="number" id="input__bill-amount" />
-          <label for="input__bill-amount">Bill Amount</label>
+          <span>
+            <input type="number" id="input__bill-amount" />
+            <label for="input__bill-amount">Bill Amount</label>
+          </span>
+          <span>
+            <input type="number" id="input__no-of-people" />
+            <label for="input__no-of-people">Number of People</label>
+          </span>
         </div>
         <div class="calculator__tip-select">
           <input
@@ -42,7 +59,9 @@
           />
           <label for="tip-select__twenty-percent">20%</label>
         </div>
-        <div class="calculator__actions"></div>
+        <div class="calculator__actions">
+          <button id="actions__calculate">Calculate</button>
+        </div>
       </section>
     </main>
   </body>
