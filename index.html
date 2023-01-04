@@ -12,26 +12,47 @@
     <main>
       <section id="calculator">
         <div class="calculator__output">
-          <div class="output__tip-amount">
+          <div class="output__item output__tip-amount">
             <span class="output__label">Tip Amount</span>
             <span class="output__currency-symbol">$</span>
             <span class="output__value">4.02</span>
           </div>
-          <div class="output__total-per-person">
+          <div class="output__item output__total-per-person">
             <span class="output__label">Total Per Person</span>
             <span class="output__currency-symbol">$</span>
             <span class="output__value">12.02</span>
           </div>
         </div>
         <div class="calculator__input">
-          <span>
-            <input type="number" id="input__bill-amount" />
-            <label for="input__bill-amount">Bill Amount</label>
-          </span>
-          <span>
-            <input type="number" id="input__no-of-people" />
-            <label for="input__no-of-people">Number of People</label>
-          </span>
+          <div class="input__form-element">
+            <span class="form-element__image-plus-value">
+              <img src="./images/dollar.svg" alt="$" />
+              <input
+                id="input__bill-amount"
+                min="0.01"
+                step="0.01"
+                type="number"
+              />
+            </span>
+            <label for="input__bill-amount" class="input__label">
+              Bill Amount
+            </label>
+          </div>
+          <div class="input__form-element">
+            <span class="form-element__image-plus-value">
+              <img src="./images/people.svg" alt="group of people" />
+              <input
+                id="input__no-of-people"
+                type="number"
+                value="1"
+                min="1"
+                step="1"
+              />
+            </span>
+            <label for="input__no-of-people" class="input__label">
+              Number of People
+            </label>
+          </div>
         </div>
         <div class="calculator__tip-select">
           <input
