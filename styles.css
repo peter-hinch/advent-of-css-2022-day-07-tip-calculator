@@ -36,14 +36,14 @@ input[type='number'] {
 }
 
 section#calculator .calculator__output {
-  margin: 0 7px;
+  margin: 0 7px 11px;
 }
 
 section#calculator .calculator__output .output__item {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 27px;
+  padding: 28px;
 }
 
 section#calculator .calculator__output .output__item .output__label {
@@ -51,7 +51,7 @@ section#calculator .calculator__output .output__item .output__label {
   text-align: end;
 }
 
-section#calculator .calculator__output .output__tip-amount {
+section#calculator .calculator__output .output__tip {
   padding-top: 55px;
   border-bottom: 1px solid #dedede;
 }
@@ -77,17 +77,16 @@ section#calculator .calculator__input {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
-
   background: #f6f6f6;
   border-radius: 20px 20px 0 0;
 }
 
 section#calculator .calculator__input .input__total {
-  width: 60%;
+  width: 65%;
 }
 
 section#calculator .calculator__input .input__pax {
-  width: 40%;
+  width: 35%;
 }
 
 section#calculator .calculator__input .input__form-element {
@@ -99,6 +98,7 @@ section#calculator .calculator__input .input__form-element {
 
 section#calculator .calculator__input .input__form-element input {
   width: calc(100% - 70px);
+  font-family: 'Inter', sans-serif;
   font-size: 62px;
   text-align: center;
   background: transparent;
@@ -137,7 +137,8 @@ section#calculator .calculator__tip-select input[type='radio'] {
   background: #ffffff;
   border-radius: 16px;
   box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.05);
-  transition: all 0.5s;
+  transition: color 0.5s;
+  transition: background 0.5s;
   cursor: pointer;
 }
 
