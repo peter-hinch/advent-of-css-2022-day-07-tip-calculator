@@ -1,5 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700;800&family=Roboto+Mono:wght@700&display=swap');
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Roboto Mono', serif;
+  font-weight: 700;
   background: #f6f6f3;
+}
+
+section#calculator {
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+section#calculator .calculator__output {
+}
+
+section#calculator .calculator__output .output__currency-symbol,
+section#calculator .calculator__output .output__value {
+  font-family: 'Inter', sans-serif;
+}
+section#calculator .calculator__output .output__currency-symbol {
+  font-weight: 800;
+}
+section#calculator .calculator__output .output__value {
+}
+
+section#calculator .calculator__input {
+  background: #f6f6f6;
+  border-radius: 20px;
+}
+
+section#calculator .calculator__tip-select {
+  background: #eeeeee;
+}
+
+section#calculator .calculator__actions {
 }
