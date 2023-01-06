@@ -24,32 +24,13 @@
           </div>
         </div>
         <div class="calculator__input">
-          <div class="input__form-element input__total">
-            <div class="form-element__image-plus-value">
-              <img src="./images/dollar.svg" alt="$" />
-              <input
-                id="input__bill-amount"
-                min="0.01"
-                step="0.01"
-                type="number"
-              />
-            </div>
-            <label for="input__bill-amount" class="input__label">
-              Bill Amount
-            </label>
+          <div class="input__form-element form-element__total">
+            <input id="input__total" min="0.01" step="0.01" type="number" />
+            <label for="input__total" class="input__label"> Bill Amount </label>
           </div>
-          <div class="input__form-element input__pax">
-            <div class="form-element__image-plus-value">
-              <img src="./images/people.svg" alt="group of people" />
-              <input
-                id="input__no-of-people"
-                type="number"
-                value="1"
-                min="1"
-                step="1"
-              />
-            </div>
-            <label for="input__no-of-people" class="input__label">
+          <div class="input__form-element form-element__pax">
+            <input id="input__pax" type="number" value="1" min="1" step="1" />
+            <label for="input__pax" class="input__label">
               Number of People
             </label>
           </div>

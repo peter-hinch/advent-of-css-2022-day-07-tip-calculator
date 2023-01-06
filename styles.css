@@ -81,38 +81,47 @@ section#calculator .calculator__input {
   border-radius: 20px 20px 0 0;
 }
 
-section#calculator .calculator__input .input__total {
-  width: 65%;
-}
-
-section#calculator .calculator__input .input__pax {
-  width: 35%;
-}
-
 section#calculator .calculator__input .input__form-element {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 61px 41px 46px;
 }
 
+section#calculator .calculator__input .input__form-element::before {
+  position: absolute;
+  top: 79px;
+  left: 41px;
+}
+
 section#calculator .calculator__input .input__form-element input {
-  width: calc(100% - 70px);
+  width: 100%;
   font-family: 'Inter', sans-serif;
   font-size: 62px;
   line-height: 75px;
   text-align: center;
   background: transparent;
   border: none;
+  border-bottom: 3px dashed #b3b3b3;
+  margin-bottom: 8px;
 }
 
-section#calculator .calculator__input .input__total {
+section#calculator .calculator__input .form-element__total {
+  width: 65%;
   border-right: 1px solid #dedede;
 }
 
-.input__form-element .form-element__image-plus-value {
-  margin-bottom: 10px;
-  border-bottom: 3px dashed #b3b3b3;
+section#calculator .calculator__input .form-element__pax {
+  width: 35%;
+}
+
+section#calculator .calculator__input .form-element__total::before {
+  content: url(./images/dollar.svg);
+}
+
+section#calculator .calculator__input .form-element__pax::before {
+  content: url(./images/people.svg);
 }
 
 section#calculator .calculator__tip-select {
@@ -167,4 +176,5 @@ section#calculator .calculator__actions button#actions__calculate {
   background: #ed7861;
   border: none;
   border-radius: 16px;
+  cursor: pointer;
 }
